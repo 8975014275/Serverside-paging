@@ -1,0 +1,22 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<div class="container mt-5">
+    <h2 class="text-primary">Category Details</h2>
+    
+    <div class="card shadow p-4">
+        <h4 class="text-dark">Category Name:</h4>
+        <p>@Model.Name</p>
+
+        <h4 class="text-dark">Description:</h4>
+        <p>@Model.Description</p>
+
+        <h4 class="text-dark">Type:</h4>
+        <p>@Model.Type</p>
+
+        <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+    </div>
+</div>
